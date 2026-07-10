@@ -1,0 +1,20 @@
+<svg width="900" height="46" viewBox="0 0 900 46" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divG10" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#0ea5e9"/>
+      <stop offset="50%" stop-color="#00fff2"/>
+      <stop offset="85%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="23" x2="900" y2="23" stroke="url(#divG10)" stroke-width="1.4" opacity="0.7"/>
+  <rect x="330" y="5" width="240" height="36" rx="18" fill="#0d1526" stroke="url(#divG10)" stroke-width="1.4"/>
+  <text x="450" y="28" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#e2e8f0" letter-spacing="2">🧩 SECTION_10 :: LEETCODE</text>
+  <circle cx="330" cy="23" r="3.5" fill="#00fff2">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="570" cy="23" r="3.5" fill="#00fff2">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+</svg>
