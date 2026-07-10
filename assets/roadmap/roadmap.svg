@@ -1,0 +1,92 @@
+<svg width="900" height="430" viewBox="0 0 900 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rmBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#101a2e"/>
+    </linearGradient>
+    <linearGradient id="rmLine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00fff2"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#00fff2"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="430" rx="16" fill="url(#rmBg)"/>
+  <rect x="1.5" y="1.5" width="897" height="427" rx="15" fill="none" stroke="#0ea5e9" stroke-opacity="0.3"/>
+  <text x="28" y="34" font-family="Consolas, monospace" font-size="14" fill="#00fff2" letter-spacing="2">◈ JAVA_FULL_STACK_ROADMAP.plan()</text>
+
+  <!-- vertical spine -->
+  <line x1="70" y1="60" x2="70" y2="380" stroke="url(#rmLine)" stroke-width="2" opacity="0.6"/>
+
+  <g font-family="Consolas, monospace">
+    <!-- template repeated for each skill, y offsets 60,110,160,... spacing 46 -->
+    <!-- Java Core 90 -->
+    <g transform="translate(0,66)">
+      <circle cx="70" cy="0" r="7" fill="#00fff2"/>
+      <text x="96" y="5" font-size="13" fill="#e2e8f0" font-weight="700">Java Core</text>
+      <rect x="620" y="-8" width="220" height="12" rx="6" fill="#1e293b"/>
+      <rect x="620" y="-8" width="198" height="12" rx="6" fill="url(#barGrad)"/>
+      <text x="850" y="2" text-anchor="end" font-size="11" fill="#00fff2">90%</text>
+    </g>
+    <!-- Spring Boot 50 -->
+    <g transform="translate(0,112)">
+      <circle cx="70" cy="0" r="7" fill="#0ea5e9"/>
+      <text x="96" y="5" font-size="13" fill="#e2e8f0" font-weight="700">Spring Boot</text>
+      <rect x="620" y="-8" width="220" height="12" rx="6" fill="#1e293b"/>
+      <rect x="620" y="-8" width="110" height="12" rx="6" fill="url(#barGrad)"/>
+      <text x="850" y="2" text-anchor="end" font-size="11" fill="#0ea5e9">50%</text>
+    </g>
+    <!-- Spring Security 30 -->
+    <g transform="translate(0,158)">
+      <circle cx="70" cy="0" r="7" fill="#7dd3fc"/>
+      <text x="96" y="5" font-size="13" fill="#e2e8f0" font-weight="700">Spring Security</text>
+      <rect x="620" y="-8" width="220" height="12" rx="6" fill="#1e293b"/>
+      <rect x="620" y="-8" width="66" height="12" rx="6" fill="url(#barGrad)"/>
+      <text x="850" y="2" text-anchor="end" font-size="11" fill="#7dd3fc">30%</text>
+    </g>
+    <!-- Hibernate/JPA 30 -->
+    <g transform="translate(0,204)">
+      <circle cx="70" cy="0" r="7" fill="#7dd3fc"/>
+      <text x="96" y="5" font-size="13" fill="#e2e8f0" font-weight="700">Hibernate / JPA</text>
+      <rect x="620" y="-8" width="220" height="12" rx="6" fill="#1e293b"/>
+      <rect x="620" y="-8" width="66" height="12" rx="6" fill="url(#barGrad)"/>
+      <text x="850" y="2" text-anchor="end" font-size="11" fill="#7dd3fc">30%</text>
+    </g>
+    <!-- Microservices 20 -->
+    <g transform="translate(0,250)">
+      <circle cx="70" cy="0" r="7" fill="#334155"/>
+      <text x="96" y="5" font-size="13" fill="#94a3b8" font-weight="700">Microservices</text>
+      <rect x="620" y="-8" width="220" height="12" rx="6" fill="#1e293b"/>
+      <rect x="620" y="-8" width="44" height="12" rx="6" fill="url(#barGrad)"/>
+      <text x="850" y="2" text-anchor="end" font-size="11" fill="#64748b">20%</text>
+    </g>
+    <!-- Docker 10 -->
+    <g transform="translate(0,296)">
+      <circle cx="70" cy="0" r="7" fill="#334155"/>
+      <text x="96" y="5" font-size="13" fill="#94a3b8" font-weight="700">Docker</text>
+      <rect x="620" y="-8" width="220" height="12" rx="6" fill="#1e293b"/>
+      <rect x="620" y="-8" width="22" height="12" rx="6" fill="url(#barGrad)"/>
+      <text x="850" y="2" text-anchor="end" font-size="11" fill="#64748b">10%</text>
+    </g>
+    <!-- AWS 10 -->
+    <g transform="translate(0,342)">
+      <circle cx="70" cy="0" r="7" fill="#334155"/>
+      <text x="96" y="5" font-size="13" fill="#94a3b8" font-weight="700">AWS</text>
+      <rect x="620" y="-8" width="220" height="12" rx="6" fill="#1e293b"/>
+      <rect x="620" y="-8" width="22" height="12" rx="6" fill="url(#barGrad)"/>
+      <text x="850" y="2" text-anchor="end" font-size="11" fill="#64748b">10%</text>
+    </g>
+  </g>
+
+  <!-- traveling pulse along the spine -->
+  <circle r="5" fill="#00fff2">
+    <animateMotion dur="3.4s" repeatCount="indefinite" path="M70 60 L70 380"/>
+    <animate attributeName="opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="28" y="410" font-family="Consolas, monospace" font-size="12" fill="#7dd3fc">
+    2026 Goal → Ship a complete Java Full Stack production app, backend to deployment.
+  </text>
+</svg>
